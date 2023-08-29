@@ -13,10 +13,12 @@
 
 /* Some Variables */
 :root {
-  --text-color: #ff9853;
+  --btn-color: #f48037;
+  --text-color: #2b2323;
   --bg-color: #fff;
   --bg-color-red: #fc5c65;
 }
+/* Variables End */
 
 /* Custom Scroll Bar */
 html::-webkit-scrollbar {
@@ -29,7 +31,9 @@ html::-webkit-scrollbar-track {
   background: var(--text-color);
   border-radius: 5rem;
 }
+/* Custom Scroll Bar End */
 
+/* NavBar */
 section {
   padding: 50px 100px;
 }
@@ -90,7 +94,9 @@ header {
   z-index: 100001;
   display: none;
 }
+/* NavBar End */
 
+/* Hero Section */
 .container {
   width: 100%;
   min-height: 640px;
@@ -134,7 +140,7 @@ header {
 
 .btn {
   padding: 0.7rem 1rem;
-  background: var(--text-color);
+  background: var(--btn-color);
   color: var(--bg-color);
   font-weight: 500;
   border-radius: 25px;
@@ -143,7 +149,9 @@ header {
 .btn:hover {
   background: #ff855b;
 }
+/* Hero Section End*/
 
+/* Stories Section */
 .heading {
   text-align: center;
 }
@@ -168,9 +176,58 @@ header {
 .storie-img {
   width: 250px;
   height: 100%;
+  overflow: hidden;
 }
 
 .storie-img img {
   width: 100%;
   height: 100%;
+}
+
+.storie-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.storie-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.storie-text h2 {
+  color: var(--bg-color);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.storie-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background: transparent;
+  color: var(--bg-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.stories-container .box:hover .storie-icon {
+  background: var(--text-color);
+  opacity: 50%;
+}
+.video-container {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.video-container iframe {
+  width: 768px;
+}
+.button {
+  padding: 0.7rem 1rem;
+  background: var(--btn-color);
+  color: var(--bg-color);
+  font-weight: 500;
+  border-radius: 25px;
 }
