@@ -24,10 +24,10 @@
 html::-webkit-scrollbar {
   width: 0.5rem;
 }
-html::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-track {
   background: transparent;
 }
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-thumb {
   background: var(--text-color);
   border-radius: 5rem;
 }
@@ -362,5 +362,40 @@ header.shadow .navbar a::after {
   }
   .navbar.active {
     right: 0;
+  }
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+  .about-text p br {
+    display: contents;
+  }
+  .heading h1,
+  .about-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 662px) {
+  .video-container iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 452px) {
+  .container {
+    min-height: 554px;
+  }
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+  .container img {
+    object-position: center;
+  }
+  .heading h1,
+  .about-text h1 {
+    font-size: 1.2rem;
+  }
+  .about-text {
+    text-align: center;
   }
 }
